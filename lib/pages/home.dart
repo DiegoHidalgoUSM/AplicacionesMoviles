@@ -22,8 +22,11 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
     backgroundColor: const Color.fromRGBO(128,9,9,1),
       appBar: AppBar(
-        title: Text('BABA YAGA', style: TextStyle(color:Colors.white)),
-        leading: Icon(Icons.person, size: 50, color:Colors.white),
+        title: Text('@BlindMan', style: TextStyle(color:Colors.white)),
+        leading: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: CircleAvatar(backgroundImage: AssetImage('assets/images/icon1.PNG'), radius: 10,),
+        ),
         backgroundColor: const Color.fromRGBO(77,26,26,1), 
       ),
       body:

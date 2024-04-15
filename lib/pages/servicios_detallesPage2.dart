@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-class DetalleServiciosPage extends StatelessWidget {
-  const DetalleServiciosPage({Key? key});
+class DetalleServiciosPage2 extends StatelessWidget {
+  const DetalleServiciosPage2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,13 +27,13 @@ class DetalleServiciosPage extends StatelessWidget {
                   SizedBox(height: 20,),
                   SizedBox(
                     width: 400, height: 300,
-                    child: Image(image: AssetImage("assets/images/sommelier.jpg"),),
+                    child: Image(image: AssetImage("assets/images/doctor.jpg"),),
                   ),SizedBox(height: 20,),
                    Container(
-                    child: Text("Sommelier ",style:TextStyle(color:Colors.white)),
+                    child: Text("Doctor ",style:TextStyle(color:Colors.white)),
                    ),SizedBox(height: 4,),
                    Text(
-              "Adéntrate en el oscuro mundo del buen vino y las armas secretas. Nuestros expertos en vinos te guiarán a través de una experiencia única, donde cada botella esconde más que solo su sabor.",
+              "¡Bienvenido a la sala de emergencias de alto secreto! Nuestros médicos están entrenados para manejar cualquier situación, desde balas hasta venenos mortales. Tu salud está en buenas manos con nosotros.",
               style: TextStyle(color: Colors.white),
               textAlign: TextAlign.center,
             ),

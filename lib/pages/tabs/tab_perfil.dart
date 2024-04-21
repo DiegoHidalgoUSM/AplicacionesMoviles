@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class TabPerfil extends StatelessWidget {
   const TabPerfil({super.key});
@@ -136,7 +135,7 @@ class TabPerfil extends StatelessWidget {
                       )
                     ],
                   ),
-                SizedBox(width: 34,),
+                
                 Column(
                     children: [
                       Container(
@@ -216,7 +215,7 @@ class TabPerfil extends StatelessWidget {
                       )
                     ],
                   ),
-                SizedBox(width: 78,),
+                SizedBox(width: 15,),
                 Column(
                     children: [
                       Container(

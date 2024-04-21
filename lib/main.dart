@@ -1,4 +1,4 @@
-import 'package:certamen_1_appmoviles/pages/home.dart';
+import 'package:certamen_1_appmoviles/pages/inicio_sesion_page.dart';
 
 import 'package:flutter/material.dart';
 
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:HomePage(),
+      home:SesionPage(),
     );
   }
 }

@@ -1,4 +1,8 @@
+
+
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 class TabContratos extends StatelessWidget {
   const TabContratos({super.key});
@@ -7,276 +11,72 @@ class TabContratos extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
     backgroundColor:Color(0xff332222),
-    body:ListView(
-      children: [
-        Divider(color: Color(0xff800909),),
-        Container(
-              decoration: BoxDecoration(
-                color: Color(0xff661111),
-                borderRadius: BorderRadius.circular(50),
+    appBar: AppBar(actions:
+     [Icon(MdiIcons.filter,color: Colors.white,),Padding(padding: EdgeInsets.all(5))],
+      backgroundColor: Color(0xff661111),
+      title: Text('\nContratos\n', style: TextStyle(color: Colors.white),),
+      centerTitle: true,
+      
+    ),
+    body:
+      
+   Center(
+          child: Container(
+            width: MediaQuery.of(context).size.width,
+            child: CarouselSlider(
+              options: CarouselOptions(
+                height: 600.0,
+                initialPage: 0,
+                enableInfiniteScroll: true,
+                reverse: false,
+                autoPlay: false,
+                enlargeCenterPage: true,
+                scrollDirection: Axis.horizontal,
               ),
-              child: Container(
-                padding: EdgeInsets.only(left:20,top:10,bottom: 10),
-                child: Text("Contratos",style: TextStyle(color:Colors.white,fontSize: 20),),
-              ),
-            ),
-
-//ESTA PRIMERA PARTE MARCA UN CONTENEDOR DE EL TITULO "CONTRATO"
-            SizedBox(height: 5,),
-        
-          Container(
-
-              decoration: BoxDecoration(
-                color: Color(0xff800909),
-                borderRadius: BorderRadius.circular(50),
-              ),
-              child: Container(
-                padding: EdgeInsets.only(left:20,top:10,bottom: 10),
-                child: Column(children:[
-                  ListTile(
-                    leading: Image(image: AssetImage('assets/images/caine.jpeg'),width: 100,),
-                    
-                    title: Text("Caine", style: TextStyle(color: Colors.white)),
-                    subtitle: Text("Tipo de contrato, monto", style: TextStyle(color: Colors.white)),
-                    trailing: Container(
-                      decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 97, 28, 28),
-                      borderRadius: BorderRadius.circular(50),),
-                      padding: EdgeInsets.all(8), 
-                      child: Text("INACTIVO", style: TextStyle(color: Colors.white)),
-
+              items: [
+                Container(
+                  margin: EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    color: Color(0xFF661111),
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  width: MediaQuery.of(context).size.width,
+                  height: 100,
+                  child: ListView(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Image(image: AssetImage('assets/images/john.jpg'),fit: BoxFit.cover,),
                       ),
-                    ),
-                  ],
-                  )
+                      ListTile(
+                        textColor: Colors.white,
+                        title: Center(child: Text('Eliminación de Objetivo de Alto Perfil\n' )),
+      
+                        subtitle: 
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('Objetivo:', style: TextStyle(fontWeight: FontWeight.bold),),
+                            Text('Eliminar a un importante líder criminal que ha traicionado a su organización.\n'),
+                            Text('Pago:',style: TextStyle(fontWeight: FontWeight.bold)),
+                            Text('\$5,000,000.\n'),
+                            Text('Requisitos adicionales:',style: TextStyle(fontWeight: FontWeight.bold)),
+                            Text('Se requiere que el objetivo sea eliminado de manera discreta y que su muerte se parezca a un accidente\n'),
+                            Text('Tipo de contrato :', style: TextStyle(fontWeight: FontWeight.bold),),
+                            Text('Abierto', style: TextStyle(backgroundColor: Colors.green),),
 
+                            Center(child: ElevatedButton(onPressed: (){}, child: Text("data",style: TextStyle(color: Colors.white),),  style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.green))),),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 ),
-              
+                
+              ],
             ),
-// AQUI ESTÁ EL CONTENEDOR DE EL CONTRATO INACTIVO (SOLO CAMBIA EL COLOR DE TRAILING)
-
-            SizedBox(height: 4,),
-
-
-            Container(
-              decoration: BoxDecoration(
-                color: Color(0xff800909),
-                borderRadius: BorderRadius.circular(50),
-              ),
-              child: Container(
-                padding: EdgeInsets.only(left:20,top:10,bottom: 10),
-                child: Column(children:[
-                  ListTile(
-                    leading: Image(image: AssetImage('assets/images/john.jpg'),width: 100,),
-                    title: Text("John Wick", style: TextStyle(color: Colors.white)),
-                    subtitle: Text("Tipo de contrato, monto", style: TextStyle(color: Colors.white)),
-                    trailing: Container(
-                      decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 72, 135, 31),
-                      borderRadius: BorderRadius.circular(50),),
-                      padding: EdgeInsets.all(8), 
-                      child: Text("ACTIVO", style: TextStyle(color: Colors.white)),
-
-                      ),
-                    ),
-                  ],
-                  )
-
-                ),
-            ),
-//AQUI ESTÁ EL CONTENEDOR DEL CONTRATO ACTIVO (CAMBIA SOLO EL COLOR DEL TRAILING)
-          SizedBox(height: 5,),
-        
-          Container(
-
-              decoration: BoxDecoration(
-                color: Color(0xff800909),
-                borderRadius: BorderRadius.circular(50),
-              ),
-              child: Container(
-                padding: EdgeInsets.only(left:20,top:10,bottom: 10),
-                child: Column(children:[
-                  ListTile(
-                    leading: Image(image: AssetImage('assets/images/marquis.png'),width: 100,),
-                    
-                    title: Text("Marquis", style: TextStyle(color: Colors.white)),
-                    subtitle: Text("Tipo de contrato, monto", style: TextStyle(color: Colors.white)),
-                    trailing: Container(
-                      decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 97, 28, 28),
-                      borderRadius: BorderRadius.circular(50),),
-                      padding: EdgeInsets.all(8), 
-                      child: Text("INACTIVO", style: TextStyle(color: Colors.white)),
-
-                      ),
-                    ),
-                  ],
-                  )
-
-                ),
-              
-            ),
-// AQUI ESTÁ EL TERCER CONTRATO, INACTIVO
-          SizedBox(height: 5,),
-        
-          Container(
-
-              decoration: BoxDecoration(
-                color: Color(0xff800909),
-                borderRadius: BorderRadius.circular(50),
-              ),
-              child: Container(
-                padding: EdgeInsets.only(left:20,top:10,bottom: 10),
-                child: Column(children:[
-                  ListTile(
-                    leading: Image(image: AssetImage('assets/images/caronte.png'),width: 100,),
-                    
-                    title: Text("Caronte", style: TextStyle(color: Colors.white)),
-                    subtitle: Text("Tipo de contrato, monto", style: TextStyle(color: Colors.white)),
-                    trailing: Container(
-                      decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 97, 28, 28),
-                      borderRadius: BorderRadius.circular(50),),
-                      padding: EdgeInsets.all(8), 
-                      child: Text("INACTIVO", style: TextStyle(color: Colors.white)),
-
-                      ),
-                    ),
-                  ],
-                  )
-
-                ),
-              
-            ),
-// AQUI ESTÁ EL CUARTO CONTRATO, INACTIVO
-          SizedBox(height: 5,),
-        
-          Container(
-
-              decoration: BoxDecoration(
-                color: Color(0xff800909),
-                borderRadius: BorderRadius.circular(50),
-              ),
-              child: Container(
-                padding: EdgeInsets.only(left:20,top:10,bottom: 10),
-                child: Column(children:[
-                  ListTile(
-                    leading: Image(image: AssetImage('assets/images/santino.png'),width: 100,),
-                    
-                    title: Text("Santino D'Antonio", style: TextStyle(color: Colors.white)),
-                    subtitle: Text("Tipo de contrato, monto", style: TextStyle(color: Colors.white)),
-                    trailing: Container(
-                      decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 97, 28, 28),
-                      borderRadius: BorderRadius.circular(50),),
-                      padding: EdgeInsets.all(8), 
-                      child: Text("INACTIVO", style: TextStyle(color: Colors.white)),
-
-                      ),
-                    ),
-                  ],
-                  )
-
-                ),
-              
-            ),
-// AQUI ESTÁ EL QUINTO CONTRATO, INACTIVO
-
-            SizedBox(height: 4,),
-
-
-            Container(
-              decoration: BoxDecoration(
-                color: Color(0xff800909),
-                borderRadius: BorderRadius.circular(50),
-              ),
-              child: Container(
-                padding: EdgeInsets.only(left:20,top:10,bottom: 10),
-                child: Column(children:[
-                  ListTile(
-                    leading: Image(image: AssetImage('assets/images/viggo.png'),width: 100,),
-                    title: Text("Viggo Tarasow", style: TextStyle(color: Colors.white)),
-                    subtitle: Text("Tipo de contrato, monto", style: TextStyle(color: Colors.white)),
-                    trailing: Container(
-                      decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 72, 135, 31),
-                      borderRadius: BorderRadius.circular(50),),
-                      padding: EdgeInsets.all(8), 
-                      child: Text("ACTIVO", style: TextStyle(color: Colors.white)),
-
-                      ),
-                    ),
-                  ],
-                  )
-
-                ),
-            ),
-//AQUI ESTÁ EL SEXTO CONTRATO ACTIVO 
-
-            SizedBox(height: 4,),
-
-
-            Container(
-              decoration: BoxDecoration(
-                color: Color(0xff800909),
-                borderRadius: BorderRadius.circular(50),
-              ),
-              child: Container(
-                padding: EdgeInsets.only(left:20,top:10,bottom: 10),
-                child: Column(children:[
-                  ListTile(
-                    leading: Image(image: AssetImage('assets/images/winston.png'),width: 100,),
-                    title: Text("Winston Scott", style: TextStyle(color: Colors.white)),
-                    subtitle: Text("Tipo de contrato, monto", style: TextStyle(color: Colors.white)),
-                    trailing: Container(
-                      decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 72, 135, 31),
-                      borderRadius: BorderRadius.circular(50),),
-                      padding: EdgeInsets.all(8), 
-                      child: Text("ACTIVO", style: TextStyle(color: Colors.white)),
-
-                      ),
-                    ),
-                  ],
-                  )
-
-                ),
-            ),
-//AQUI ESTÁ EL SEPTIMO CONTRATO ACTIVO 
-          SizedBox(height: 5,),
-        
-          Container(
-
-              decoration: BoxDecoration(
-                color: Color(0xff800909),
-                borderRadius: BorderRadius.circular(50),
-              ),
-              child: Container(
-                padding: EdgeInsets.only(left:20,top:10,bottom: 10),
-                child: Column(children:[
-                  ListTile(
-                    leading: Image(image: AssetImage('assets/images/akira.png'),width: 100,),
-                    
-                    title: Text("Akira Shimazu", style: TextStyle(color: Colors.white)),
-                    subtitle: Text("Tipo de contrato, monto", style: TextStyle(color: Colors.white)),
-                    trailing: Container(
-                      decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 97, 28, 28),
-                      borderRadius: BorderRadius.circular(50),),
-                      padding: EdgeInsets.all(8), 
-                      child: Text("INACTIVO", style: TextStyle(color: Colors.white)),
-
-                      ),
-                    ),
-                  ],
-                  )
-
-                ),
-              
-            ),
-            //AQUI ESTÁ EL 8VO CONTRATO ACTIVO 
-      ],
-    )
+          ),
+        ),
     );
   }
 }

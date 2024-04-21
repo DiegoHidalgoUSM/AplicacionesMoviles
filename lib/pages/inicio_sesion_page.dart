@@ -1,4 +1,4 @@
-import 'package:certamen_1_appmoviles/pages/tabs/tab_perfil.dart';
+import 'package:certamen_1_appmoviles/pages/home.dart';
 import 'package:flutter/material.dart';
 class SesionPage extends StatelessWidget {
   const SesionPage({super.key});
@@ -77,8 +77,8 @@ class SesionPage extends StatelessWidget {
                 ElevatedButton(
                     
                     onPressed: (){
-                      final route =MaterialPageRoute(builder: (contex){
-                        return TabPerfil();
+                      final route =MaterialPageRoute(builder: (context){
+                        return HomePage();
                       });
                       Navigator.pushReplacement(context, route);
 

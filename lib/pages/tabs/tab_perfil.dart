@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class TabPerfil extends StatelessWidget {
   const TabPerfil({super.key});
@@ -45,7 +46,7 @@ class TabPerfil extends StatelessWidget {
                     
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                    Icon(Icons.person_2, size: 30,),
+                    Icon(Icons.person_2_outlined, size: 30, ),
                     Text('Nombre ', style: TextStyle(color: Color.fromARGB(255, 255, 255, 255), fontSize: 25),),
                   
                   ],),
@@ -94,7 +95,7 @@ class TabPerfil extends StatelessWidget {
                     
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                    Icon(Icons.mail, size: 30,),
+                    Icon(MdiIcons.email, size: 30,),
                     Text('Correo ', style: TextStyle(color: Color.fromARGB(255, 255, 255, 255), fontSize: 25),),
                   
                   ],),
@@ -122,7 +123,7 @@ class TabPerfil extends StatelessWidget {
                         ),
                         child: Row(
                           children: [
-                            Icon(Icons.calendar_month),
+                            Icon(MdiIcons.calendarBlank),
                             Text('Fecha de nacimiento ', style: TextStyle(color: Color.fromARGB(255, 255, 255, 255), fontSize: 25)),
                           ],
                         ),
@@ -145,7 +146,7 @@ class TabPerfil extends StatelessWidget {
                         ),
                         child: Row(
                           children: [
-                            Icon(Icons.calendar_month),
+                            Icon(Icons.numbers_outlined),
                             Text('Edad ', style: TextStyle(color: Color.fromARGB(255, 255, 255, 255), fontSize: 25)),
                           ],
                         ),
@@ -174,7 +175,7 @@ class TabPerfil extends StatelessWidget {
                     
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                    Icon(Icons.numbers, size: 25,),
+                    Icon(MdiIcons.pistol, size: 25,),
                     Text('Número asesinatos', style: TextStyle(color: Color.fromARGB(255, 255, 255, 255), fontSize: 25),),
                   
                   ],),
@@ -202,7 +203,7 @@ class TabPerfil extends StatelessWidget {
                         ),
                         child: Row(
                           children: [
-                            Icon(Icons.map_outlined),
+                            Icon(MdiIcons.city),
                             Text('  Ciudad  ', style: TextStyle(color: Color.fromARGB(255, 255, 255, 255), fontSize: 25)),
                           ],
                         ),
@@ -225,7 +226,7 @@ class TabPerfil extends StatelessWidget {
                         ),
                         child: Row(
                           children: [
-                            Icon(Icons.maps_home_work_outlined),
+                            Icon(MdiIcons.flag),
                             Text('Nacionalidad ', style: TextStyle(color: Color.fromARGB(255, 255, 255, 255), fontSize: 25)),
                           ],
                         ),
@@ -254,7 +255,7 @@ class TabPerfil extends StatelessWidget {
                     
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                    Icon(Icons.home, size: 25,),
+                    Icon(MdiIcons.homeCircle, size: 25,),
                     Text('Afiliaciones', style: TextStyle(color: Color.fromARGB(255, 255, 255, 255), fontSize: 25),),
                   
                   ],),
@@ -281,7 +282,7 @@ class TabPerfil extends StatelessWidget {
                     
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                    Icon(Icons.dangerous, size: 25,),
+                    Icon(MdiIcons.knifeMilitary, size: 25,),
                     Text('Habilidades', style: TextStyle(color: Color.fromARGB(255, 255, 255, 255), fontSize: 25),),
                   
                   ],),

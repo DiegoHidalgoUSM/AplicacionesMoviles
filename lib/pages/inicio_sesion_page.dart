@@ -77,10 +77,10 @@ class SesionPage extends StatelessWidget {
                 ElevatedButton(
                     
                     onPressed: (){
-                      final route =MaterialPageRoute(builder: (context){
+                      final routeInicio =MaterialPageRoute(builder: (context){
                         return HomePage();
                       });
-                      Navigator.pushReplacement(context, route);
+                      Navigator.pushReplacement(context, routeInicio);
 
 
                     },

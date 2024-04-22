@@ -11,23 +11,13 @@ class TabHoteles extends StatelessWidget {
         padding: EdgeInsets.all(9),
         child: ListView(
           children: [
-
-            Container(
-              decoration: BoxDecoration(
-                color: Color(0xff332222),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: ListTile(
-                title: Text("HOTELES:",style:TextStyle(color:Colors.white),),
-              ),
-            ),
-
+            Center(child:  Text("HOTELES:",style:TextStyle(color:Colors.white,fontSize: 25,fontWeight: FontWeight.bold),),),
 //CONTENEDOR DEL TITULO DE LA PAGINA
 
             SizedBox(height: 10),
 
-
             Container(
+              padding: EdgeInsets.all(13),
               decoration: BoxDecoration(
                 color: Color(0xFF661111),
                 borderRadius: BorderRadius.circular(40),
@@ -43,10 +33,17 @@ class TabHoteles extends StatelessWidget {
                    Container(
                     alignment:Alignment.center,
                     child: Text("Hotel Tokio ",style:TextStyle(color:Colors.white)),
-                   ),SizedBox(height: 4,),
-                   Text("Descubre la esencia de Japón en el Hotel Tokio. Una fusión perfecta entre tradición y modernidad.",style: TextStyle(color:Colors.white),),
+                   ),SizedBox(height: 4,),Divider(),
+                   Center(child: Text("Descubre la esencia de Japón en el Hotel Tokio. Una fusión perfecta entre tradición y modernidad.",style:TextStyle(color:Colors.white,),),),
                    SizedBox(height: 25,),
-                   
+                   Container(
+                    padding: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color.fromARGB(255, 137, 57, 57)
+                    ),
+                    child: Text("                Ubicación del recinto: \n\n Shibuya Crossing, Shibuya, Tokio, Japón.",style: TextStyle(color: Colors.white),),
+                   ),
 
                    
                 ],
@@ -59,6 +56,8 @@ class TabHoteles extends StatelessWidget {
 
 
             Container(
+              
+              padding: EdgeInsets.all(13),
               decoration: BoxDecoration(
                 color: Color(0xFF661111),
                 borderRadius: BorderRadius.circular(40),
@@ -73,9 +72,17 @@ class TabHoteles extends StatelessWidget {
                   ),SizedBox(height: 20,),
                    Container(
                     child: Text("Hotel Londres ",style:TextStyle(color:Colors.white)),
-                   ),SizedBox(height: 4,),
+                   ),SizedBox(height: 4,),Divider(),
                    Text("Sumérgete en el corazón de la capital británica y descubre una experiencia única en el Hotel Londres.",style: TextStyle(color:Colors.white),),
                    SizedBox(height: 25,),
+                   Container(
+                    padding: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color.fromARGB(255, 137, 57, 57)
+                    ),
+                    child: Text("                 Ubicación del recinto: \n\nAvenue Eagle 100th, Londres, Inglaterra.",style: TextStyle(color: Colors.white),),
+                   ),
                    
 
                    
@@ -89,6 +96,8 @@ class TabHoteles extends StatelessWidget {
 
 
             Container(
+              
+              padding: EdgeInsets.all(13),
               decoration: BoxDecoration(
                 color: Color(0xFF661111),
                 borderRadius: BorderRadius.circular(40),
@@ -103,9 +112,17 @@ class TabHoteles extends StatelessWidget {
                   ),SizedBox(height: 20,),
                    Container(
                     child: Text("Hotel New York ",style:TextStyle(color:Colors.white)),
-                   ),SizedBox(height: 4,),
+                   ),SizedBox(height: 4,),Divider(),
                    Text(" Donde el lujo se encuentra con la sofisticación, ofreciendo una experiencia inolvidable en la ciudad que nunca duerme.",style: TextStyle(color:Colors.white),),
                    SizedBox(height: 25,),
+                   Container(
+                    padding: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color.fromARGB(255, 137, 57, 57)
+                    ),
+                    child: Text("                     Ubicación del recinto: \n\nAvenida Grantt 32, New York, Estados Unidos.",style: TextStyle(color: Colors.white),),
+                   ),
                    
 
                    
@@ -119,6 +136,8 @@ class TabHoteles extends StatelessWidget {
 
 
             Container(
+              
+              padding: EdgeInsets.all(13),
               decoration: BoxDecoration(
                 color: Color(0xFF661111),
                 borderRadius: BorderRadius.circular(40),
@@ -133,9 +152,17 @@ class TabHoteles extends StatelessWidget {
                   ),SizedBox(height: 20,),
                    Container(
                     child: Text("Hotel Paris ",style:TextStyle(color:Colors.white)),
-                   ),SizedBox(height: 4,),
+                   ),SizedBox(height: 4,),Divider(),
                     Text("Descubre la belleza atemporal de la Ciudad de la Luz desde la comodidad y el encanto del Hotel Paris.",style: TextStyle(color:Colors.white),),
                    SizedBox(height: 25,),
+                   Container(
+                    padding: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color.fromARGB(255, 137, 57, 57)
+                    ),
+                    child: Text("              Ubicación del recinto: \n\n    Calle Athenée 2032, Paris, Francia.",style: TextStyle(color: Colors.white),),
+                   ),
                 ],
               ),
             ),

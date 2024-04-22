@@ -24,27 +24,33 @@ class SesionPage extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children:[
+
+
                 CircleAvatar(
                   radius: 100.0,
                   backgroundColor: Colors.grey,
                   backgroundImage: AssetImage('assets/images/icon.png'),
                 ),
+
+
+
                 Text('Inicio Sesión', style: TextStyle(fontSize: 50,color: Colors.white)),
+
                 Divider(),
+
                 Text('Nombre Asesino', style: TextStyle(fontSize: 25,color: Colors.white)),
           
                 Divider(color:Colors.white),
 
                 TextField(
-                decoration: InputDecoration(
-                suffixIcon: Icon(Icons.verified_user, color: Colors.white),
-                border: OutlineInputBorder(
-                  borderSide: BorderSide(
-                    color:Color.fromRGBO(255, 255, 255, 1),
-                    ),
-                  borderRadius: BorderRadius.circular(30)
+                  decoration: InputDecoration(
+                    suffixIcon: Icon(Icons.verified_user, color: Colors.white),
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide(color:Color.fromRGBO(255, 255, 255, 1),),
+                      borderRadius: BorderRadius.circular(30)),
+                    focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.white),borderRadius: BorderRadius.circular(30)),
                   ),
-                  )
+                  style: TextStyle(color:Colors.white),
                   ),
 
                 Divider(),
@@ -54,35 +60,26 @@ class SesionPage extends StatelessWidget {
                 Divider(color:Colors.white),
 
                 TextField(
-                enableInteractiveSelection: false,
-                obscureText: true,
-                decoration: InputDecoration(
-                suffixIcon: Icon(Icons.lock_outline, color: Colors.white,),
-                border: OutlineInputBorder(
-                  borderSide: BorderSide(
-                    color:Color.fromRGBO(255, 255, 255, 1),
-                    width: 2.0,
-                    ),
-                  borderRadius: BorderRadius.circular(30)
-                  ),
-                  ),
-
-                //
-
+                  enableInteractiveSelection: false,
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    suffixIcon: Icon(Icons.lock_outline, color: Colors.white,),
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide(color:Color.fromRGBO(255, 255, 255, 1),width: 2.0, ),
+                      borderRadius: BorderRadius.circular(30)),
+                    focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.white),borderRadius: BorderRadius.circular(30)),),
+                  style: TextStyle(color:Colors.white)
                   ),
 
                 Divider(),
                    
                 SizedBox(height: 20),
                 ElevatedButton(
-                    
                     onPressed: (){
                       final route =MaterialPageRoute(builder: (context){
                         return HomePage();
                       });
                       Navigator.pushReplacement(context, route);
-
-
                     },
                     child: 
                       Text('Iniciar Sesión',
@@ -90,10 +87,6 @@ class SesionPage extends StatelessWidget {
                       ),
                 style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Color.fromRGBO(77,26,26,1))),
               ),
-                
-                  
-                
-
               ]
             )
           ]

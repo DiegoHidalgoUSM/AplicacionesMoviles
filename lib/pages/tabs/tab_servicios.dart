@@ -26,9 +26,15 @@ class TabServicios extends StatelessWidget {
             ListTile(
               textColor: Colors.white,
               iconColor: Colors.white,
-              title: Text("Sommelier"),
-              subtitle: Text("brindado y entrega de armas y suministros."),
-              leading: Icon(MdiIcons.pistol),
+              title: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Sommelier",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),),
+                  SizedBox(height: 10,),
+                  Icon(MdiIcons.pistol),
+                  Text("Entrega de armas y suministros."),
+                ],
+              ),
               trailing: Icon(Icons.arrow_forward_ios),
               onTap: () {
                 MaterialPageRoute rutaServicioDetalle =
@@ -41,13 +47,19 @@ class TabServicios extends StatelessWidget {
                 );
               },
             ),
-            Divider(),
+            Divider(color:Colors.red.shade900,),
             ListTile(
               textColor: Colors.white,
               iconColor: Colors.white,
-              title: Text("Doctor"),
-              subtitle: Text("Servicio médico de urgencia."),
-              leading: Icon(MdiIcons.medicalBag),
+              title: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Doctor",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),),
+                  SizedBox(height: 10,),
+                  Icon(MdiIcons.medicalBag),
+                  Text("Servicios médicos de emergencia."),
+                ],
+              ),
               trailing: Icon(Icons.arrow_forward_ios),
               onTap: () {
                 MaterialPageRoute rutaServicioDetalle2 =
@@ -60,13 +72,19 @@ class TabServicios extends StatelessWidget {
                 );
               },
             ),
-            Divider(),
+            Divider(color:Colors.red.shade900,),
             ListTile(
               textColor: Colors.white,
               iconColor: Colors.white,
-              title: Text("Sastre"),
-              subtitle: Text("Entrega de trajes con resistencia a balas"),
-              leading: Icon(MdiIcons.shieldCrown),
+              title: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Sastre",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),),
+                  SizedBox(height: 10,),
+                  Icon(MdiIcons.shieldCrown),
+                  Text("La elegancia con una sutil protección."),
+                ],
+              ),
               trailing: Icon(Icons.arrow_forward_ios),
               onTap: () {
                 MaterialPageRoute rutaServicioDetalle3 =
@@ -79,13 +97,19 @@ class TabServicios extends StatelessWidget {
                 );
               },
             ),
-            Divider(),
+            Divider(color:Colors.red.shade900,),
             ListTile(
               textColor: Colors.white,
               iconColor: Colors.white,
-              title: Text("Limpiadores"),
-              subtitle: Text("Aseo de lugares en los que hubieron asesinatos"),
-              leading: Icon(MdiIcons.broom),
+              title: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Limpiadores",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),),
+                  SizedBox(height: 10,),
+                  Icon(MdiIcons.broom),
+                  Text("Una limpieza profunda a sus problemas."),
+                ],
+              ), 
               trailing: Icon(Icons.arrow_forward_ios),
               onTap: () {
                 MaterialPageRoute rutaServicioDetalle4 =
@@ -98,7 +122,7 @@ class TabServicios extends StatelessWidget {
                 );
               },
             ),
-            Divider(),
+            Divider(color:Colors.red.shade900,),
           ],
         ),
       ),

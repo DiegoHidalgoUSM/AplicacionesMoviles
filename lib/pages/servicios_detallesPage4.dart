@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class DetalleServiciosPage4 extends StatelessWidget {
   const DetalleServiciosPage4({Key? key});
@@ -28,13 +29,11 @@ class DetalleServiciosPage4 extends StatelessWidget {
             SizedBox(
               width: 400,
               height: 300,
-              child: Image(image: AssetImage("assets/images/limpiadores.jpg")),
+               child: Transform.scale(child: Image(image: AssetImage("assets/images/limpiadores.jpg"),),scale: 1.3,),
             ),
             SizedBox(height: 20),
             Text(
-              "Limpiadores",
-              style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
-            ),
+              "Limpiadores",style:TextStyle(color:Colors.white,fontWeight: FontWeight.bold,fontSize: 30)),
             SizedBox(height: 10),
             Text(
               "Nuestro equipo de limpiadores especializados garantiza que cada rastro de un trabajo bien hecho desaparezca sin dejar rastro. Desde la sangre hasta los restos de balas, nuestro servicio de limpieza es impecable y discreto.",
@@ -42,15 +41,38 @@ class DetalleServiciosPage4 extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 20),
-            ElevatedButton(
-                    
-                    onPressed: (){},
-                    child: 
-                      Text('Contactar',
-                      style: TextStyle(color: Colors.white)
-                      ),
-                style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Color.fromRGBO(77,26,26,1))),
-              ),
+            Container(
+              padding: EdgeInsets.all(10),
+              width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Color.fromRGBO(77, 26, 26, 1)),
+              child: Card(
+                elevation: 0,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),),
+                color: Color.fromRGBO(77, 26, 26, 1),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                child: ListView(
+                shrinkWrap: true,
+                children: [
+                ListTile(
+                  title: Text("Family Montt S.A.",style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),),
+                  subtitle: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      ListTile(
+                      contentPadding: EdgeInsets.zero,
+                      title: Text("Lugares de limpieza: Todo Europa \nHora: SIN LIMITE DE HORA",style: TextStyle(fontSize: 10, color: Colors.white),),
+                      leading: Icon(MdiIcons.mapMarker,color: Colors.white,),
+                      trailing: ElevatedButton(
+                        onPressed: () {},
+                        child: Text('Contactar',style: TextStyle(color: Colors.white),),
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all(Color(0xFF675757)),), ),
+                ),],),),
+                ],),),),),
           ],
         ),
       ),

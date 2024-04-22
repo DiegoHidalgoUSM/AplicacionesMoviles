@@ -13,12 +13,15 @@ class TabServicios extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xff332222),
       appBar: AppBar(
-        backgroundColor: Color(0xff332222),
-        title: Text(
-          'Servicios',
-          style: TextStyle(color: Colors.white),
+        backgroundColor: Color(0xff661111),
+        title: Center(
+          child: Text(
+            'Servicios',
+            style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+          ),
         ),
       ),
+      
       body: Padding(
         padding: EdgeInsets.all(8),
         child: ListView(

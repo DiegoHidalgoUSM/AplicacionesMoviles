@@ -20,13 +20,20 @@ class TabPerfil extends StatelessWidget {
               children: [
                 Center(
                   child: Column(
+
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Padding(
                         padding: EdgeInsets.only(top:40),
-                        child: CircleAvatar(
-                          radius: 160,
-                          backgroundImage: AssetImage('assets/images/caine1.PNG'),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border:Border.all(color: Colors.green,width: 3),borderRadius: BorderRadius.circular(160)),
+                          child: CircleAvatar(
+                            
+                            radius: 160,
+                                    
+                            backgroundImage: AssetImage('assets/images/caine1.PNG'),
+                          ),
                         ),
                       )
                     ],    
@@ -40,7 +47,7 @@ class TabPerfil extends StatelessWidget {
                 Container(
                   decoration: BoxDecoration(
                     color:Color(0xFF661111),
-                    borderRadius: BorderRadius.circular(10)
+                    borderRadius: BorderRadius.circular(10),
                   ),
                   child: Row(
                     

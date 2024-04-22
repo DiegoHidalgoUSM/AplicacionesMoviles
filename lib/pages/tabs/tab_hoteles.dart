@@ -11,7 +11,7 @@ class TabHoteles extends StatelessWidget {
         padding: EdgeInsets.all(9),
         child: ListView(
           children: [
-            Center(child:  Text("HOTELES:",style:TextStyle(color:Colors.white,fontSize: 25,fontWeight: FontWeight.bold),),),
+            Center(child:  Text("Hoteles",style:TextStyle(color:Colors.white,fontSize: 23,fontWeight: FontWeight.bold),),),
 //CONTENEDOR DEL TITULO DE LA PAGINA
 
             SizedBox(height: 10),

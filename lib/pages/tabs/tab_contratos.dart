@@ -14,7 +14,7 @@ class TabContratos extends StatelessWidget {
     appBar: AppBar(actions:
      [Icon(MdiIcons.filter,color: Colors.white,),Padding(padding: EdgeInsets.all(5))],
       backgroundColor: Color(0xff661111),
-      title: Text('\n Mis Contratos\n', style: TextStyle(color: Colors.white),),
+      title: Text('\n Mis Contratos\n', style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold)),
       centerTitle: true,
       
     ),

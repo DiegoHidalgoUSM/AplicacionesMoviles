@@ -191,7 +191,7 @@ class TabPerfil extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                  Text('32', style: TextStyle(color: Color.fromRGBO(255, 255, 255, 1), fontSize: 20))
+                  Text('320', style: TextStyle(color: Color.fromRGBO(255, 255, 255, 1), fontSize: 30))
                 ],),
 
                 //numero asesinatos
@@ -202,6 +202,7 @@ class TabPerfil extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                   Column(
+
                     children: [
                       Container(
                         decoration: BoxDecoration(

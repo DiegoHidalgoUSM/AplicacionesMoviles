@@ -31,16 +31,16 @@ class DetalleServiciosPage4 extends StatelessWidget {
                 SizedBox(
                   width: 400,
                   height: 300,
-                   child: Transform.scale(child: Image(image: AssetImage("assets/images/limpiadores.jpg"),),scale: 1.3,),
+                   child: Transform.scale(child: Image(image: AssetImage("assets/images/limpiadores.jpg"),),scale: 1.1,),
                 ),
                 SizedBox(height: 20),
                 Text(
                   "Limpiadores",style:TextStyle(color:Colors.white,fontWeight: FontWeight.bold,fontSize: 30)),
                 SizedBox(height: 10),
                 Text(
-                  "Nuestro equipo de limpiadores especializados garantiza que cada rastro de un trabajo bien hecho desaparezca sin dejar rastro. Desde la sangre hasta los restos de balas, nuestro servicio de limpieza es impecable y discreto.",
+                  "Nuestro equipo de limpiadores especializados garantiza que cada rastro de un trabajo bien hecho desaparezca. Desde la sangre hasta los restos de balas, nuestro servicio de limpieza es impecable y discreto.",
                   style: TextStyle(color: Colors.white),
-                  textAlign: TextAlign.center,
+                  textAlign: TextAlign.justify,
                 ),
                 SizedBox(height: 20),
                 Container(

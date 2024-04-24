@@ -31,7 +31,7 @@ class DetalleServiciosPage2 extends StatelessWidget {
                       SizedBox(height: 20,),
                       SizedBox(
                         width: 400, height: 300,
-                        child: Transform.scale(child: Image(image: AssetImage("assets/images/doctor.jpg"),),scale: 1.4,),
+                        child: Transform.scale(child: Image(image: AssetImage("assets/images/doctor.jpg"),),scale: 1.1,),
                       ),SizedBox(height: 20,),
                        Container(
                         child: Text("Doctor ",style:TextStyle(color:Colors.white,fontWeight: FontWeight.bold,fontSize: 30)),

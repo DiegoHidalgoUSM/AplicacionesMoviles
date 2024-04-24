@@ -31,7 +31,7 @@ class DetalleServiciosPage3 extends StatelessWidget {
                 SizedBox(
                   width: 400,
                   height: 300,
-                  child: Transform.scale(child: Image(image: AssetImage("assets/images/sastre.jpg"),),scale: 1.4,),
+                  child: Transform.scale(child: Image(image: AssetImage("assets/images/sastre.jpg"),),scale: 1.1,),
                 ),
                 SizedBox(height: 20),
                 Text("Sastre" ,style:TextStyle(color:Colors.white,fontWeight: FontWeight.bold,fontSize: 30)),

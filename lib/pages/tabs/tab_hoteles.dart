@@ -42,7 +42,7 @@ class TabHoteles extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10),
                       color: Color.fromARGB(255, 137, 57, 57)
                     ),
-                    child: Text("                Ubicación del recinto: \n\n Shibuya Crossing, Shibuya, Tokio, Japón.",style: TextStyle(color: Colors.white),),
+                    child: Text("                Ubicación del recinto: \n\n Shibuya Crossing, Shibuya, Tokio, Japón.",style: TextStyle(color: Colors.white),textAlign: TextAlign.justify,),
                    ),
 
                    
@@ -73,7 +73,7 @@ class TabHoteles extends StatelessWidget {
                    Container(
                     child: Text("Hotel Londres ",style:TextStyle(color:Colors.white)),
                    ),SizedBox(height: 4,),Divider(),
-                   Text("Sumérgete en el corazón de la capital británica y descubre una experiencia única en el Hotel Londres.",style: TextStyle(color:Colors.white),),
+                   Text("Sumérgete en el corazón de la capital británica y descubre una experiencia única en el Hotel Londres.",style: TextStyle(color:Colors.white),textAlign: TextAlign.justify,),
                    SizedBox(height: 25,),
                    Container(
                     padding: EdgeInsets.all(10),
@@ -113,7 +113,7 @@ class TabHoteles extends StatelessWidget {
                    Container(
                     child: Text("Hotel New York ",style:TextStyle(color:Colors.white)),
                    ),SizedBox(height: 4,),Divider(),
-                   Text(" Donde el lujo se encuentra con la sofisticación, ofreciendo una experiencia inolvidable en la ciudad que nunca duerme.",style: TextStyle(color:Colors.white),),
+                   Text(" Donde el lujo se encuentra con la sofisticación, ofreciendo una experiencia inolvidable en la ciudad que nunca duerme.",style: TextStyle(color:Colors.white),textAlign: TextAlign.justify,),
                    SizedBox(height: 25,),
                    Container(
                     padding: EdgeInsets.all(10),
@@ -153,7 +153,7 @@ class TabHoteles extends StatelessWidget {
                    Container(
                     child: Text("Hotel Paris ",style:TextStyle(color:Colors.white)),
                    ),SizedBox(height: 4,),Divider(),
-                    Text("Descubre la belleza atemporal de la Ciudad de la Luz desde la comodidad y el encanto del Hotel Paris.",style: TextStyle(color:Colors.white),),
+                    Text("Descubre la belleza atemporal de la Ciudad de la Luz desde la comodidad y el encanto del Hotel Paris.",style: TextStyle(color:Colors.white),textAlign: TextAlign.justify,),
                    SizedBox(height: 25,),
                    Container(
                     padding: EdgeInsets.all(10),

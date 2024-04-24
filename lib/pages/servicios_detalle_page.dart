@@ -47,7 +47,7 @@ class DetalleServiciosPage extends StatelessWidget {
                        Text(
                   "Adéntrate en el oscuro mundo del buen vino y las armas secretas. Nuestros expertos en vinos te guiarán a través de una experiencia única, donde cada botella esconde más que solo su sabor.",
                   style: TextStyle(color: Colors.white),
-                  textAlign: TextAlign.center,
+                  textAlign: TextAlign.justify,
                 ),
                 SizedBox(height: 20),
           

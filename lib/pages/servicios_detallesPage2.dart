@@ -40,7 +40,7 @@ class DetalleServiciosPage2 extends StatelessWidget {
                        Text(
                   "¡Bienvenido a la sala de emergencias de alto secreto! Nuestros médicos están entrenados para manejar cualquier situación, desde balas hasta venenos mortales. Tu salud está en buenas manos con nosotros.",
                   style: TextStyle(color: Colors.white),
-                  textAlign: TextAlign.center,
+                  textAlign: TextAlign.justify,
                 ),
                 SizedBox(height: 20),
                 

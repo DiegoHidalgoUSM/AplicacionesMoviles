@@ -40,7 +40,7 @@ class DetalleServiciosPage3 extends StatelessWidget {
                 Text(
                   "En nuestro taller secreto, nuestros sastres no solo crean trajes de alta calidad, sino que también los diseñan para protegerte en las situaciones más peligrosas. Cada puntada es una promesa de seguridad y estilo en el mundo de los asesinos.",
                   style: TextStyle(color: Colors.white),
-                  textAlign: TextAlign.center,
+                  textAlign: TextAlign.justify,
                 ),
           
                 SizedBox(height: 20),

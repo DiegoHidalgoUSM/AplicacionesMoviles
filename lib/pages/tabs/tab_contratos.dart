@@ -72,7 +72,7 @@ class TabContratos extends StatelessWidget {
                             Text('Tipo de contrato :', style: TextStyle(fontWeight: FontWeight.bold),),
                             Text('Abierto\n'),
 
-                            Center(child: ElevatedButton(onPressed: (){}, child: Text("Obtener más información",style: TextStyle(color: Colors.white),),  style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.green))),),
+                            Center(child: ElevatedButton(onPressed: (){}, child: Text("Solicitar información al correo",style: TextStyle(color: Colors.white),),  style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.green))),),
                           ],
                         ),
                       ),
@@ -118,7 +118,7 @@ class TabContratos extends StatelessWidget {
                             Text('Tipo de contrato :', style: TextStyle(fontWeight: FontWeight.bold),),
                             Text('Cerrado\n'),
 
-                            Center(child: ElevatedButton(onPressed: (){}, child: Text("Obtener más información",style: TextStyle(color: Colors.white),),  style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.grey))),),
+                            Center(child: ElevatedButton(onPressed: (){}, child: Text("Solicitar información al correo",style: TextStyle(color: Colors.white),),  style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.grey))),),
                           ],
                         ),
                       ),
@@ -164,7 +164,7 @@ class TabContratos extends StatelessWidget {
                             Text('Tipo de contrato :', style: TextStyle(fontWeight: FontWeight.bold),),
                             Text('Abierto\n'),
 
-                            Center(child: ElevatedButton(onPressed: (){}, child: Text("Obtener más información",style: TextStyle(color: Colors.white),),  style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.green))),),
+                            Center(child: ElevatedButton(onPressed: (){}, child: Text("Solicitar información al correo",style: TextStyle(color: Colors.white),),  style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.green))),),
                           ],
                         ),
                       ),
@@ -210,7 +210,7 @@ class TabContratos extends StatelessWidget {
                             Text('Tipo de contrato :', style: TextStyle(fontWeight: FontWeight.bold),),
                             Text('Abierto\n'),
 
-                            Center(child: ElevatedButton(onPressed: (){}, child: Text("Obtener más información",style: TextStyle(color: Colors.white),),  style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.green))),),
+                            Center(child: ElevatedButton(onPressed: (){}, child: Text("Solicitar información al correo",style: TextStyle(color: Colors.white),),  style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.green))),),
                           ],
                         ),
                       ),
@@ -256,7 +256,7 @@ class TabContratos extends StatelessWidget {
                             Text('Tipo de contrato :', style: TextStyle(fontWeight: FontWeight.bold),),
                             Text('Abierto\n'),
 
-                            Center(child: ElevatedButton(onPressed: (){}, child: Text("Obtener más información",style: TextStyle(color: Colors.white),),  style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.grey))),),
+                            Center(child: ElevatedButton(onPressed: (){}, child: Text("Solicitar información al correo",style: TextStyle(color: Colors.white),),  style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.grey))),),
                           ],
                         ),
                       ),
